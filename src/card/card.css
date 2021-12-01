@@ -1,0 +1,38 @@
+.card-wrapper {
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px 0 rgba(46, 50, 60, 0.09);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+.header .arrow{
+    transition: all 0.3s;
+}
+.header .arrow.opened{
+    transform: rotate(180deg);
+}
+
+.content {
+    visibility: hidden;
+    overflow: hidden;
+    opacity: 0;
+    max-height: 0;
+    transition: all 0.3s;
+}
+
+.content.opened {
+    margin-top: 10px;
+    padding: 16px 0;
+    border-top: 1px solid #dddcdc;
+    visibility: visible;
+    overflow: visible;
+    opacity: 1;
+}
